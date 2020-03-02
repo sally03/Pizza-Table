@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Orders</title>
+</head>
+<body class="img">
+<br>
+<ul class="nav justify-content-center bg-aqua color-text-secondary mr-5">
+<li class="nav-item">
+<a class="nav-link bg-info text-white" href="index.html">Home</a>
+</li>
+
+
+</ul>
+<br>
+<div class="container-fluid">
+<div class="jumbotron">
+<div class="page-header">
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-12">
+
+<br>
+<h3 class="one">Pizza</h3>
+<select class="form-control size">
+
+<option label="Small" value="550">Small</option>
+<option label="Medium" value="750">Medium</option>
+<option label="Large" value="1200">Large</option>
+</select>
+</div>
+<div class="col-md-4 col-sm-12">
+<br>
+<h3 class="two">Crust</h3>
+<select class="form-control crust">
+<option label="Crispy" value="150">Crispy</option>
+<option label="Stuffed" value="250">Stuffed</option>
+<option label="Gluten-free" value="350">Gluten-free</option>
+</select>
+</div>
+<div class="col-md-4 col-sm-12">
+<br>
+<h3 class="three">Toppings</h3>
+<select class="form-control toppings">
+<option label="Pepperoni" value="150">Pepperoni</option>
+<option label="Onions" value="250">Onions</option>
+<option label="Mushrooms" value="350">Mushrooms</option>
+</select>
+</div>
+</div>
+<br>
+<div class="text-center">
+<button class="btn btn-info order" type="submit">Order</button>
+</div>
+<br>
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Order No.</th>
+<th scope="col">Pizza Size</th>
+<th scope="col">Crust</th>
+<th scope="col">Toppings</th>
+<th scope="col">Total</th>
+</tr>
+</thead>
+<tbody id="pizza">
+<tr>
+<th scope="row">1</th>
+<td id="size"></td>
+<td id="toppings"></td>
+<td id="crust"></td>
+<td id="total"></td>
+</tr>
+</tbody>
+</table>
+<div class="order">
+<button type="button"class="btn bg-primary" id="the-order">Order</button>
+</div>
+<div class="">
+<button class="btn btn-info" id="add-pizza" type="button">Add Another</button>
+</div>
+
+
+<div class="delivery">
+<h3 id="total1">The total is: <span></span></h3>
+</div>
+<div class="text">
+<h5>Would you like it delivered? For an extra charge of <em>300</em></h5>
+<button type="button" class="btn bg-primary" id="yes">Yes</button>
+<button class="btn bg-primary" id="no" type="button">No</button>
+</div>
+
+<div class="location">
+<p>Please enter location</p>
+<input type="text" placeholder="location" id="locale" required>
+<button type="button" id="submit" class="btn bg-primary">Submit</button>
+</div>
+<div class="complete-order">
+<button class="btn btn-info" id="complete" type="button">Complete</button>
+</div>
+<div class="response">
+
+</div>
+<div class="add-info">
+
+</div>
+
+<div class="text-center">
+<h4>Thank You! Your order has been received </h4>
+
+</div>
+</div>
+<script src="js/jquery-3.4.1.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/script.js"></script>
+</body>
+</html>
